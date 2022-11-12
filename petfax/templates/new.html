@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Submit You Information</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Give me some fun facts about your animal!</h1>
+      <div class="facts-container">
+      <form>
+        <label for="submitter"><h2>Name</h2></label>
+        <input name="submitter" type="text" />
+        <br />
+        <label for="fact"><h2>Fact</h2></label>
+        <textarea name="fact"></textarea>
+        <br />
+        <input type="submit" value="Submit the Fact and Name" />
+      </form>
+      </div>
+      <a href="/pets">Go Back Once You Have Submit Form!</a>
+    </div>
+  </body>
+</html>
